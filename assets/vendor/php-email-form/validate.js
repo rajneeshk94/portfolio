@@ -80,7 +80,8 @@
     thisForm.querySelector('.loading').classList.remove('d-block');
     thisForm.querySelector('.error-message').innerHTML = "Thank you, will get back to you soon &#128515;";
     thisForm.querySelector('.error-message').classList.add('d-block');
-    document.querySelectorAll('.php-email-form').reset();
+    var frm = document.querySelectorAll('.php-email-form');
+    frm.reset();
   }
 
 })();
