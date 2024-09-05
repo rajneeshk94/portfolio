@@ -1023,3 +1023,31 @@ section {
   font-size: 24px;
   font-family: serif;
 }
+
+#casserole {
+  background: #040b14;
+}
+
+#casserole_description {
+  color: white;
+}
+
+.swiper-slide img {
+  width: 100%;              /* Ensure the image takes up the full width of the container */
+  max-width: 1080px;          /* Set a maximum width to control the size */
+  height: auto;              /* Maintain aspect ratio */
+  object-fit: cover;         /* Ensure the image covers the area without distortion */
+  display: block;
+  margin: 0 auto;            /* Center the image horizontally */
+}
+
+.portfolio-wrap {
+  display: flex;             /* Center the image and its links */
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio-wrap img {
+  max-height: 700px;         /* Set a maximum height for the images */
+  object-fit: cover;         /* Ensures the image fits within the container while maintaining its aspect ratio */
+}

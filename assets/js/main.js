@@ -253,4 +253,26 @@
     })
   });
 
+  // Ensure the DOM is fully loaded before executing Swiper
+  document.addEventListener('DOMContentLoaded', function () {
+    // Swiper initialization for Casserole section
+    var swiper = new Swiper('.swiper-container', {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  });
+
+
 })()
